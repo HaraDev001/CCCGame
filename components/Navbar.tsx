@@ -91,7 +91,7 @@ export const Navbar = ({
                             <div className="hidden md:block">
                                 {menubar}
                             </div>
-                            <div className="md:block w-8">
+                            <div className="md:block">
                                 <div className="w-max px-4 py-1 border-2 border-green-700 cursor-pointer">
                                     
                                     <a className="dark:text-green-300 block relative" onClick={() => connect()}>
