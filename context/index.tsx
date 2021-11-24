@@ -7,6 +7,7 @@ const initialState = {
 };
 
 // create context
+
 const Context = createContext({});
 
 // combine reducer function

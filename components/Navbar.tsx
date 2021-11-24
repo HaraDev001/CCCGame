@@ -6,6 +6,7 @@ import { faCheck, faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { fab } from '@fortawesome/free-brands-svg-icons'
 import MyDropdown from '../components/Dropdown/Dropdown'
+import Image from 'next/image';
 import { useRouter } from "next/router";
 
 const logoUrl = "/Logo CCC (2021)@2x-8.png";
@@ -36,12 +37,15 @@ export const Navbar = ({
         { name: '5 Card Pack Uncommon', to: "marketplace/5cardpack" },
         { name: 'Hellen Schmidt', to: "" },
     ]
-
+    interface AuthContextType {
+        state: any;
+        dispatch: any;
+    }
     useEffect(() => {
         document.documentElement.classList.add('dark')
         setTheme('dark')
-      }, [])
-    const { state, dispatch } = useContext(Context);
+      })
+    const { state, dispatch } = useContext(Context) as AuthContextType;
     const connect = () => {
         if(!state.wallet.address) {
             dispatch({
@@ -84,8 +88,8 @@ export const Navbar = ({
                     <div className="mx-auto px-4 md:px-16 border-b-2 border-pink-900 border-opacity-50">
                         <div className="flex items-center justify-between h-16">
                             <div className="flex items-center cursor-pointer">
-                                <Link href="/dashboard">
-                                    <img className="h-auto w-10" src={logoUrl} alt="Workflow"/>
+                                <Link href="/dashboard" passHref>
+                                    <Image className="h-auto" width="40" height="40" src={logoUrl} alt="Workflow"/>
                                 </Link>
                             </div>
                             <div className="hidden md:block">

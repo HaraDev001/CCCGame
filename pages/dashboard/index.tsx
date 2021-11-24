@@ -2,7 +2,6 @@ import { Navbar } from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar';
 import { RoundPanel } from '../../components/Panels/RoundPanel';
 import { IconButton } from '../../components/Buttons/IconButton';
-import { Dropdown } from '../../components/Dropdown/Dropdown';
 import { ExpandDropdown } from '../../components/Dropdown/ExpandDropdown';
 import { ApexOptions } from '../../components/ApexOptions';
 // import { Collapse } from 'react-collapse';
@@ -18,7 +17,7 @@ export default function DashBoard(){
     useEffect(() => {
         document.documentElement.classList.add('dark')
         setTheme('dark')
-      }, [])
+    })
     // The wrapper exports only a default component class that at the same time is a
     // namespace for the related Props interface (HighchartsReact.Props). All other
     // interfaces like Options come from the Highcharts module itself.

@@ -7,6 +7,7 @@ import { ApexOptions } from '../../components/ApexOptions';
 // import { Collapse } from 'react-collapse';
 // import Chart from "react-apexcharts";
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes'
 import Head from "next/head";
@@ -20,7 +21,7 @@ export default function MarketPlace(){
     useEffect(() => {
         document.documentElement.classList.add('dark')
         setTheme('dark')
-      }, [])
+      })
     // The wrapper exports only a default component class that at the same time is a
     // namespace for the related Props interface (HighchartsReact.Props). All other
     // interfaces like Options come from the Highcharts module itself.
@@ -43,7 +44,9 @@ export default function MarketPlace(){
                             Rare
                         </div>
                     </div>
-                    <img className="w-1/4 mx-auto my-2" src="/img/card-uncommon.png"></img>
+                    <div className="w-32 h-40 md:w-80 md:h-96 mx-auto my-2 relative">
+                        <Image layout="fill" src="/img/card-uncommon.png" alt="card-uncommon"></Image>
+                    </div>
                     <p>5 Card Pack Rare</p>
 
                     <div className="float-left dark:text-dark-color-bg-yellow dark:text-opacity-80">10 BUSD</div>
@@ -65,7 +68,9 @@ export default function MarketPlace(){
                             Rare
                         </div>
                     </div>
-                    <img className="w-1/4 mx-auto my-2" src="/img/card-uncommon.png"></img>
+                    <div className="w-32 h-40 md:w-80 md:h-96 mx-auto my-2 relative">
+                        <Image layout="fill" src="/img/card-uncommon.png" alt="card-uncommon"></Image>
+                    </div>
                     <p>5 Card Pack Rare</p>
 
                     <div className="float-left dark:text-dark-color-bg-yellow dark:text-opacity-80">10 BUSD</div>
@@ -92,7 +97,9 @@ export default function MarketPlace(){
                             Rare
                         </div> */}
                     </div>
-                    <img className="w-1/4 mx-auto my-2" src="/img/card-uncommon.png"></img>
+                    <div className="w-32 h-40 md:w-80 md:h-96 mx-auto my-2 relative">
+                        <Image layout="fill" src="/img/card-uncommon.png" alt="card-uncommon"></Image>
+                    </div>
                     <p>5 Card Pack Common</p>
 
                     <div className="float-left dark:text-dark-color-bg-yellow dark:text-opacity-80">10 BUSD</div>
@@ -114,7 +121,9 @@ export default function MarketPlace(){
                             Rare
                         </div> */}
                     </div>
-                    <img className="w-1/4 mx-auto my-2" src="/img/card-uncommon.png"></img>
+                    <div className="w-32 h-40 md:w-80 md:h-96 mx-auto my-2 relative">
+                        <Image layout="fill" src="/img/card-uncommon.png" alt="card-uncommon"></Image>
+                    </div>
                     <p>5 Card Pack Uncommon</p>
 
                     <div className="float-left dark:text-dark-color-bg-yellow dark:text-opacity-80">10 BUSD</div>
@@ -136,7 +145,9 @@ export default function MarketPlace(){
                             Rare
                         </div>
                     </div>
-                    <img className="w-1/4 mx-auto my-2" src="/img/card-uncommon.png"></img>
+                    <div className="w-32 h-40 md:w-80 md:h-96 mx-auto my-2 relative">
+                        <Image layout="fill" src="/img/card-uncommon.png" alt="card-uncommon"></Image>
+                    </div>
                     <p>5 Card Pack Rare</p>
 
                     <div className="float-left dark:text-dark-color-bg-yellow dark:text-opacity-80">10 BUSD</div>

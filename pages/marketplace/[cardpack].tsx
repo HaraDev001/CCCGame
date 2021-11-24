@@ -13,6 +13,7 @@ import Head from "next/head";
 import { faHeart, faShareAlt, faEllipsisH } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRouter } from 'next/router'
+import Image from 'next/image';
 
 export default function CardPack(){
     const {theme, setTheme} = useTheme();
@@ -22,7 +23,7 @@ export default function CardPack(){
     useEffect(() => {
         document.documentElement.classList.add('dark')
         setTheme('dark')
-      }, [])
+      })
     // The wrapper exports only a default component class that at the same time is a
     // namespace for the related Props interface (HighchartsReact.Props). All other
     // interfaces like Options come from the Highcharts module itself.
@@ -33,7 +34,9 @@ export default function CardPack(){
                 {/* <div className="flex-shrink-0 p-6 h-full title-font">qweqweqwe</div> */}
                 {/* <div className="flex-shrink-0 p-6 h-full subtitle-font">qweqweqwe</div> */}
                 <div className="flex-shrink w-full md:w-3/5">
-                    <img className="w-4/5 md:w-1/2 mx-auto md:mx-32 my-6" src="/img/card-uncommon.png"></img>
+                <div className="w-2/3 h-64 md:w-1/3 md:h-full mx-auto my-2 relative">
+                    <Image layout="fill" src="/img/card-uncommon.png" alt="card-uncommon"></Image>
+                </div>
                 </div>
                 <div className="flex-shrink w-full md:w-2/5">
                     <h1 className="text-3xl md:text-5xl">5 CARD PACK UNCOMMON</h1>

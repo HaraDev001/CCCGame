@@ -11,7 +11,7 @@ export default function Home() {
     document.documentElement.classList.add('dark')
     setTheme('dark')
     router.push('/dashboard')
-  }, [])
+  })
   return (
     <>
       <div className={styles.container}>

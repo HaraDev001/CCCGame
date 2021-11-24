@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes'
+import Image from 'next/image';
 import Link from 'next/link';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,7 +11,7 @@ export default function Footer(){
     useEffect(() => {
         document.documentElement.classList.add('dark')
         setTheme('dark')
-      }, [])
+      })
     // The wrapper exports only a default component class that at the same time is a
     // namespace for the related Props interface (HighchartsReact.Props). All other
     // interfaces like Options come from the Highcharts module itself.
@@ -29,8 +30,8 @@ export default function Footer(){
     return(
         <div className="flex flex-col flex-shrink-1 md:flex-row mt-4 md:mt-12 border-t-2 border-white justify-between p-8">
             <div className="flex-shrink-0 p-6">
-                <Link href="/dashboard">
-                    <img className="h-auto w-10 mb-4" src={logoUrl} alt="Workflow"/>
+                <Link href="/dashboard" passHref>
+                    <Image className="mb-4" width="40" height="40" src={logoUrl} alt="Workflow"/>
                 </Link>
                 <p>A turn based card<br/>dueling platform</p>
             </div>
