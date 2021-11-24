@@ -4,7 +4,7 @@ import { Listbox, Transition } from '@headlessui/react';
 import { Collapse } from 'react-collapse';
 import Image from 'next/image';
 
-const logoUrl = "/logo_panel.png";
+const logoUrl = "/static/logo_panel.png";
 
 interface ExpandDropdownInterface {
     iconURL: string,
@@ -17,7 +17,7 @@ interface ExpandDropdownInterface {
 }
 
 export const ExpandDropdown = ({
-    iconURL = "/logo_panel.png",
+    iconURL = "/static/logo_panel.png",
     mainText = "Fieonix Interest Account",
     mainAmount = 12401.68,
     mainAmountCurrency = "£",

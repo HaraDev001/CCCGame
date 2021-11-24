@@ -35,7 +35,7 @@ export default function CardPack(){
                 {/* <div className="flex-shrink-0 p-6 h-full subtitle-font">qweqweqwe</div> */}
                 <div className="flex-shrink w-full md:w-3/5">
                 <div className="w-2/3 h-64 md:w-1/3 md:h-full mx-auto my-2 relative">
-                    <Image layout="fill" src="/img/card-uncommon.png" alt="card-uncommon"></Image>
+                    <Image layout="fill" src="/static/img/card-uncommon.png" alt="card-uncommon"></Image>
                 </div>
                 </div>
                 <div className="flex-shrink w-full md:w-2/5">

@@ -161,7 +161,7 @@ const Sidebar = ({open = false}) => {
                 </nav>
                 <div className="px-3 py-3 ">
                     <a className="w-14 h-14 hover:text-gray-800 hover:bg-indigo-400 text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors duration-200 flex items-center p-2 rounded-lg" href="#">
-                        <Image className="m-auto" width="40" height="40" layout="fill" src="/icons/icon_logout.png" alt="icon_logout"/>
+                        <Image className="m-auto" width="40" height="40" layout="fill" src="/static/icons/icon_logout.png" alt="icon_logout"/>
                         { open ? 
                         <span className="mx-4 font-medium">
                             Support

@@ -45,7 +45,7 @@ export default function MarketPlace(){
                         </div>
                     </div>
                     <div className="w-32 h-40 md:w-80 md:h-96 mx-auto my-2 relative">
-                        <Image layout="fill" src="/img/card-uncommon.png" alt="card-uncommon"></Image>
+                        <Image layout="fill" src="/static/img/card-uncommon.png" alt="card-uncommon"></Image>
                     </div>
                     <p>5 Card Pack Rare</p>
 
@@ -69,7 +69,7 @@ export default function MarketPlace(){
                         </div>
                     </div>
                     <div className="w-32 h-40 md:w-80 md:h-96 mx-auto my-2 relative">
-                        <Image layout="fill" src="/img/card-uncommon.png" alt="card-uncommon"></Image>
+                        <Image layout="fill" src="/static/img/card-uncommon.png" alt="card-uncommon"></Image>
                     </div>
                     <p>5 Card Pack Rare</p>
 
@@ -98,7 +98,7 @@ export default function MarketPlace(){
                         </div> */}
                     </div>
                     <div className="w-32 h-40 md:w-80 md:h-96 mx-auto my-2 relative">
-                        <Image layout="fill" src="/img/card-uncommon.png" alt="card-uncommon"></Image>
+                        <Image layout="fill" src="/static/img/card-uncommon.png" alt="card-uncommon"></Image>
                     </div>
                     <p>5 Card Pack Common</p>
 
@@ -122,7 +122,7 @@ export default function MarketPlace(){
                         </div> */}
                     </div>
                     <div className="w-32 h-40 md:w-80 md:h-96 mx-auto my-2 relative">
-                        <Image layout="fill" src="/img/card-uncommon.png" alt="card-uncommon"></Image>
+                        <Image layout="fill" src="/static/img/card-uncommon.png" alt="card-uncommon"></Image>
                     </div>
                     <p>5 Card Pack Uncommon</p>
 
@@ -146,7 +146,7 @@ export default function MarketPlace(){
                         </div>
                     </div>
                     <div className="w-32 h-40 md:w-80 md:h-96 mx-auto my-2 relative">
-                        <Image layout="fill" src="/img/card-uncommon.png" alt="card-uncommon"></Image>
+                        <Image layout="fill" src="/static/img/card-uncommon.png" alt="card-uncommon"></Image>
                     </div>
                     <p>5 Card Pack Rare</p>
 
