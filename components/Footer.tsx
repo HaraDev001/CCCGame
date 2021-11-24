@@ -25,7 +25,7 @@ export default function Footer(){
     const timeButtonClick = (btn) => () => {
         setActiveTimeButton(btn)
     }
-    const logoUrl = "/Logo CCC (2021)@2x-8.png";
+    const logoUrl = "/static/Logo CCC (2021)@2x-8.png";
     
     return(
         <div className="flex flex-col flex-shrink-1 md:flex-row mt-4 md:mt-12 border-t-2 border-white justify-between p-8">
