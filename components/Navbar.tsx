@@ -9,7 +9,7 @@ import MyDropdown from '../components/Dropdown/Dropdown'
 import Image from 'next/image';
 import { useRouter } from "next/router";
 
-const logoUrl = "/Logo CCC (2021)@2x-8.png";
+const logoUrl = "/static/Logo CCC (2021)@2x-8.png";
 interface NavbarInterface {
     children?: ReactNode,
     mode: "light" | "dark"
