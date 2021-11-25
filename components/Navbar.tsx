@@ -24,8 +24,7 @@ export const Navbar = ({
     const {theme, setTheme} = useTheme();
 
     const battleCenterItems = [
-        { name: '5 Card Pack Uncommon', to: "marketplace/5cardpack" },
-        { name: 'Hellen Schmidt', to: "" },
+        { name: 'battle one', to: "battle" },
     ]
     
     const marketPlaceItems = [
